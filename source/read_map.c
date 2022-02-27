@@ -36,6 +36,5 @@ void mem_assign(fdf_s *brain)
 	i = -1;
 	brain->matrix = (int **)malloc(8 * brain->rows + 1);
 	while (++i <= brain->cols)
-		brain->matrix = (int *)malloc(brain->cols + 1);
-	
+		brain->matrix[i] = (int *)malloc(brain->cols + 1);	
 }
